@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,51 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* .App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+h1 {
+  text-align: center;
+}
+
+.navbar {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  border: 2px solid black;
+  padding: 30px;
+}
+
+.main-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.favorite-btn {
+  height: unset;
+}
+
+.search-input-div {
+  text-align: center;
+}
+
+.margin {
+  margin-bottom: 50px;
 }
