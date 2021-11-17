@@ -8,16 +8,9 @@ import {
 } from '../../../redux/actions';
 import { connect } from 'react-redux';
 import './searchInput.css';
-import useAutoComplete from '../../../customHooks/useAutoComplete';
 
 const SearchInput = (props) => {
-  const {
-    setCityName,
-    autoComplete,
-    setAutoComplete,
-    setCurrentCity,
-    setApiError,
-  } = props;
+  const { setCityName, autoComplete, setAutoComplete, setCurrentCity } = props;
   const { Search } = Input;
   const inputRef = useRef();
 
@@ -26,15 +19,6 @@ const SearchInput = (props) => {
     if (!value) {
       return setAutoComplete([]);
     }
-    // useAutoComplete(value)
-    // fetch(
-    //   `http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=Vw78AAyCE30KZX7W8JRfAIYExiGy8ly9&q=${value}&language=en-us`
-    // )
-    //   .then((res) => res.json())
-    //   .then((data) => {
-    //     setAutoComplete(data);
-    //   })
-    //   .catch(() => setApiError(true));
   };
 
   const onUserChoice = (city) => {

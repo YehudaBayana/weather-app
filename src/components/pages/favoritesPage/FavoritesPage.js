@@ -1,11 +1,37 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { deleteFromFavorites, setCurrentCity } from '../../../redux/actions';
+import {
+  deleteFromFavorites,
+  setAllWeather,
+  setApiError,
+  setCurrentCity,
+} from '../../../redux/actions';
 import './favoritesPage.css';
 
 const FavoritesPage = (props) => {
-  const { favorites, allWeather, isC, setCurrentCity } = props;
+  const {
+    favorites,
+    allWeather,
+    isC,
+    setCurrentCity,
+    setAllWeather,
+    setApiError,
+  } = props;
+  useEffect(() => {
+    setAllWeather([]);
+    favorites.forEach((city) => {
+      fetch(
+        `https://dataservice.accuweather.com/currentconditions/v1/${city?.Key}?apikey=Vw78AAyCE30KZX7W8JRfAIYExiGy8ly9&language=en-us&details=true`
+      )
+        .then((res) => res.json())
+        .then((data) => {
+          setAllWeather(data);
+        })
+        .catch(() => setApiError(true));
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   return (
     <>
       {favorites.length > 0 ? (
@@ -82,6 +108,8 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => ({
   setCurrentCity: (city) => dispatch(setCurrentCity(city)),
   deleteFromList: (key) => dispatch(deleteFromFavorites(key)),
+  setAllWeather: (weather) => dispatch(setAllWeather(weather)),
+  setApiError: (weather) => dispatch(setApiError(weather)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(FavoritesPage);

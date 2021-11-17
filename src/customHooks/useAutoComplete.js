@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 const useAutoComplete = (cityName, setAutoComplete, setApiError) => {
   useEffect(() => {
     fetch(
-      `http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=Vw78AAyCE30KZX7W8JRfAIYExiGy8ly9&q=${cityName}&language=en-us`
+      `https://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=Vw78AAyCE30KZX7W8JRfAIYExiGy8ly9&q=${cityName}&language=en-us`
     )
       .then((res) => res.json())
       .then((data) => {
