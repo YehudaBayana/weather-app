@@ -9,7 +9,7 @@ function App(props) {
   return (
     <>
       <GetWeather />
-      {!props.apiError ? <AppRouter /> : <ErrorPage />}
+      <AppRouter />
     </>
   );
 }
