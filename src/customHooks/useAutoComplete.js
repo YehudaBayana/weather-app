@@ -1,15 +1,19 @@
 import { useEffect } from 'react';
 
-const useAutoComplete = (cityName, setOptions) => {
+const useAutoComplete = (cityName, setAutoComplete, setApiError) => {
   useEffect(() => {
     fetch(
-      `http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=KaTGIASr9NFspoidKuY07atdW8My3qp1&q=${cityName}&language=en-us`
+      `http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=Vw78AAyCE30KZX7W8JRfAIYExiGy8ly9&q=${cityName}&language=en-us`
     )
       .then((res) => res.json())
       .then((data) => {
-        setOptions(data);
+        setAutoComplete(data);
+      })
+      .catch((err) => {
+        console.log(err);
       });
-  }, [cityName, setOptions]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [cityName]);
 };
 
 export default useAutoComplete;

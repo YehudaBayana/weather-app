@@ -8,7 +8,9 @@ function favoritesReducer(state = favoritesInitialState, action) {
       let alreadyIn = state.find((city) => city.Key === action.payload.Key);
       return alreadyIn ? state : [...state, action.payload];
     case DELETE_FROM_FAVORITES:
-      let indexCity = state.findIndex((city) => city.Key === action.payload);
+      let indexCity = state.findIndex(
+        (city) => city.Key === action.payload.Key
+      );
       state.splice(indexCity, 1);
       return state;
     default:

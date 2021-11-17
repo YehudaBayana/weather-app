@@ -1,0 +1,62 @@
+/* body {
+    overflow: hidden;
+}
+html, body {
+    position: relative;
+    background: #D4DFE6;
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #274c5e;
+} */
+.Error-Container {
+  text-align: center;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.MainTitle {
+  display: block;
+  font-size: 2rem;
+  font-weight: lighter;
+  text-align: center;
+}
+.MainDescription {
+  max-width: 50%;
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+.MainGraphic {
+  position: relative;
+}
+.Cog {
+  width: 10rem;
+  height: 10rem;
+  fill: #6aafe6;
+  transition: easeInOutQuint();
+  animation: CogAnimation 5s infinite;
+}
+
+.Hummingbird {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  fill: #30a9de;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+@keyframes CogAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

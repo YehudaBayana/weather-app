@@ -1,8 +1,8 @@
 import { SET_CURRENT_CITY } from '../actions';
 
-export const currentInitialState = 'current city';
+export const currentCityInitialState = 'current city';
 
-function currentCityReducer(state = currentInitialState, action) {
+function currentCityReducer(state = currentCityInitialState, action) {
   switch (action.type) {
     case SET_CURRENT_CITY:
       return action.payload;
