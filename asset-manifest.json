@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/yehuda-bayana-11-09-2021/static/css/main.d438c4a8.chunk.css",
+    "main.js": "/yehuda-bayana-11-09-2021/static/js/main.f29f19df.chunk.js",
+    "main.js.map": "/yehuda-bayana-11-09-2021/static/js/main.f29f19df.chunk.js.map",
+    "runtime-main.js": "/yehuda-bayana-11-09-2021/static/js/runtime-main.f729719d.js",
+    "runtime-main.js.map": "/yehuda-bayana-11-09-2021/static/js/runtime-main.f729719d.js.map",
+    "static/css/2.a95be28f.chunk.css": "/yehuda-bayana-11-09-2021/static/css/2.a95be28f.chunk.css",
+    "static/js/2.506f71bb.chunk.js": "/yehuda-bayana-11-09-2021/static/js/2.506f71bb.chunk.js",
+    "static/js/2.506f71bb.chunk.js.map": "/yehuda-bayana-11-09-2021/static/js/2.506f71bb.chunk.js.map",
+    "index.html": "/yehuda-bayana-11-09-2021/index.html",
+    "static/css/2.a95be28f.chunk.css.map": "/yehuda-bayana-11-09-2021/static/css/2.a95be28f.chunk.css.map",
+    "static/css/main.d438c4a8.chunk.css.map": "/yehuda-bayana-11-09-2021/static/css/main.d438c4a8.chunk.css.map",
+    "static/js/2.506f71bb.chunk.js.LICENSE.txt": "/yehuda-bayana-11-09-2021/static/js/2.506f71bb.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f729719d.js",
+    "static/css/2.a95be28f.chunk.css",
+    "static/js/2.506f71bb.chunk.js",
+    "static/css/main.d438c4a8.chunk.css",
+    "static/js/main.f29f19df.chunk.js"
+  ]
+}
