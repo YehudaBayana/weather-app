@@ -1,3 +1,11 @@
+# Notes for abra/herolo team.
+
+1. I've got this task at 09/11/2021 (like it says in the repository name). and finished 18/11/2021. this is took longer then it should be because I wasn't able to be in front of a computer a couple of days.
+
+2. in the project instructions there is section that says to do autoComplete, I did that on search(onClick) and not when the user typing(onChange) that because the api has limit of the amount of request that we can do, so that the reason to the onClick and not onChange.
+
+3. if you enter the site you might see an error page that I created, that because I did tests to my site on the production and the allowed number of requests per day has been exceeded because my tests, so check this out day after I send this to you.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
