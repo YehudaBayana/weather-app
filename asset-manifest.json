@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/yehuda-bayana-11-09-2021/static/css/main.d438c4a8.chunk.css",
-    "main.js": "/yehuda-bayana-11-09-2021/static/js/main.2cfa022d.chunk.js",
-    "main.js.map": "/yehuda-bayana-11-09-2021/static/js/main.2cfa022d.chunk.js.map",
+    "main.js": "/yehuda-bayana-11-09-2021/static/js/main.2d7e9154.chunk.js",
+    "main.js.map": "/yehuda-bayana-11-09-2021/static/js/main.2d7e9154.chunk.js.map",
     "runtime-main.js": "/yehuda-bayana-11-09-2021/static/js/runtime-main.f729719d.js",
     "runtime-main.js.map": "/yehuda-bayana-11-09-2021/static/js/runtime-main.f729719d.js.map",
     "static/css/2.a95be28f.chunk.css": "/yehuda-bayana-11-09-2021/static/css/2.a95be28f.chunk.css",
@@ -18,6 +18,6 @@
     "static/css/2.a95be28f.chunk.css",
     "static/js/2.97c68fd8.chunk.js",
     "static/css/main.d438c4a8.chunk.css",
-    "static/js/main.2cfa022d.chunk.js"
+    "static/js/main.2d7e9154.chunk.js"
   ]
 }
