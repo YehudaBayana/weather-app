@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/yehuda-bayana-11-09-2021/static/css/main.d438c4a8.chunk.css",
-    "main.js": "/yehuda-bayana-11-09-2021/static/js/main.4edc2231.chunk.js",
-    "main.js.map": "/yehuda-bayana-11-09-2021/static/js/main.4edc2231.chunk.js.map",
+    "main.css": "/yehuda-bayana-11-09-2021/static/css/main.4c8cf7c8.chunk.css",
+    "main.js": "/yehuda-bayana-11-09-2021/static/js/main.c530bb5e.chunk.js",
+    "main.js.map": "/yehuda-bayana-11-09-2021/static/js/main.c530bb5e.chunk.js.map",
     "runtime-main.js": "/yehuda-bayana-11-09-2021/static/js/runtime-main.f729719d.js",
     "runtime-main.js.map": "/yehuda-bayana-11-09-2021/static/js/runtime-main.f729719d.js.map",
     "static/css/2.a95be28f.chunk.css": "/yehuda-bayana-11-09-2021/static/css/2.a95be28f.chunk.css",
@@ -10,14 +10,14 @@
     "static/js/2.97c68fd8.chunk.js.map": "/yehuda-bayana-11-09-2021/static/js/2.97c68fd8.chunk.js.map",
     "index.html": "/yehuda-bayana-11-09-2021/index.html",
     "static/css/2.a95be28f.chunk.css.map": "/yehuda-bayana-11-09-2021/static/css/2.a95be28f.chunk.css.map",
-    "static/css/main.d438c4a8.chunk.css.map": "/yehuda-bayana-11-09-2021/static/css/main.d438c4a8.chunk.css.map",
+    "static/css/main.4c8cf7c8.chunk.css.map": "/yehuda-bayana-11-09-2021/static/css/main.4c8cf7c8.chunk.css.map",
     "static/js/2.97c68fd8.chunk.js.LICENSE.txt": "/yehuda-bayana-11-09-2021/static/js/2.97c68fd8.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f729719d.js",
     "static/css/2.a95be28f.chunk.css",
     "static/js/2.97c68fd8.chunk.js",
-    "static/css/main.d438c4a8.chunk.css",
-    "static/js/main.4edc2231.chunk.js"
+    "static/css/main.4c8cf7c8.chunk.css",
+    "static/js/main.c530bb5e.chunk.js"
   ]
 }
