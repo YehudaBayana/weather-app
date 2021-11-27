@@ -2,7 +2,7 @@
   "name": "weather-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://YehudaBayana.github.io/yehuda-bayana-11-09-2021",
+  "homepage": "http://YehudaBayana.github.io/weather-app",
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
     "@testing-library/jest-dom": "^5.15.0",
