@@ -8,7 +8,7 @@ const WeeklyWeather = (props) => {
     <>
       <div
         className='weather-of-the-week margin'
-        style={{ display: 'flex', flexWrap: 'wrap' }}
+        // style={{ display: 'flex', flexWrap: 'wrap' }}
       >
         {weeklyWeather.DailyForecasts?.map((day, i) => {
           let average = Math.floor(
