@@ -33,8 +33,8 @@ const Navbar = (props) => {
         <PageHeader
           style={{ backgroundColor: '#bae7ff' }}
           ghost={false}
-          title='Herolo'
-          subTitle='Weather Task'
+          title='Yehuda'
+          subTitle='Weather app'
           extra={
             size > 460
               ? [

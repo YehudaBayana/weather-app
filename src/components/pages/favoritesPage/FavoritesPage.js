@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import {
+  deleteAllWeather,
   deleteFromFavorites,
   setAllWeather,
   setApiError,
@@ -16,10 +17,11 @@ const FavoritesPage = (props) => {
     isC,
     setCurrentCity,
     setAllWeather,
+    deleteAllWeather,
     setApiError,
   } = props;
   useEffect(() => {
-    setAllWeather([]);
+    deleteAllWeather();
     favorites.forEach((city) => {
       fetch(
         `https://dataservice.accuweather.com/currentconditions/v1/${city?.Key}?apikey=Vw78AAyCE30KZX7W8JRfAIYExiGy8ly9&language=en-us&details=true`
@@ -109,6 +111,7 @@ const mapDispatchToProps = (dispatch) => ({
   setCurrentCity: (city) => dispatch(setCurrentCity(city)),
   deleteFromList: (key) => dispatch(deleteFromFavorites(key)),
   setAllWeather: (weather) => dispatch(setAllWeather(weather)),
+  deleteAllWeather: () => dispatch(deleteAllWeather()),
   setApiError: (weather) => dispatch(setApiError(weather)),
 });
 

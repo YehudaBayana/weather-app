@@ -132,3 +132,14 @@
     transform: translateX(0px);
   }
 }
+
+.weather-of-the-week {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 500px) {
+  .weather-of-the-week {
+    justify-content: center;
+  }
+}
