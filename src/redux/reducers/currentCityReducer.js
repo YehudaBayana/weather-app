@@ -1,6 +1,6 @@
 import { SET_CURRENT_CITY } from '../actions';
 
-export const currentCityInitialState = 'current city';
+export const currentCityInitialState = {};
 
 function currentCityReducer(state = currentCityInitialState, action) {
   switch (action.type) {

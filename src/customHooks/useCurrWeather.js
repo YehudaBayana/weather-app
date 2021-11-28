@@ -31,6 +31,7 @@ export const getUserLocation = (setCurrentCity, setApiError) => {
     )
       .then((res) => res.json())
       .then((data) => {
+        if (!data) return setApiError(true);
         setCurrentCity(data);
       })
       .catch(() => setApiError(true));

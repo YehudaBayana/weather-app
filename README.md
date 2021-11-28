@@ -1,10 +1,10 @@
-# Notes for abra/herolo team.
+# Weather project using react hooks and redux
 
-1. I've got this task at 09/11/2021 (like it says in the repository name). and finished 18/11/2021. this is took longer then it should be because I wasn't able to be in front of a computer a couple of days.
+in this project I build a web that shows the weather around the world.
 
-2. in the project instructions there is section that says to do autoComplete, I did that on search(onClick) and not when the user typing(onChange) that because the api has limit of the amount of request that we can do, so that the reason to the onClick and not onChange.
+you can search weather by city name.
 
-3. if you enter the site you might see an error page that I created, that because I did tests to my site on the production and the allowed number of requests per day has been exceeded because my tests, so check this out day after I send this to you.
+you can save your cities in your favorites.
 
 # Getting Started with Create React App
 

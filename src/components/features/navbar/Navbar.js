@@ -38,19 +38,6 @@ const Navbar = (props) => {
           extra={
             size > 460
               ? [
-                  <Button
-                    key='1'
-                    onClick={() =>
-                      setTheme((old) => (old === 'dark' ? 'light' : 'dark'))
-                    }
-                    style={
-                      theme === 'dark'
-                        ? { backgroundColor: 'white', color: 'black' }
-                        : { backgroundColor: '#424242', color: 'white' }
-                    }
-                  >
-                    {theme === 'dark' ? 'light mode' : 'dark mode'}
-                  </Button>,
                   <Button key='2' onClick={() => setIsC(!isC)}>
                     {isC ? 'Fahrenheit' : 'Celsius'}
                   </Button>,
@@ -102,3 +89,17 @@ const mapDispatchToProps = (dispatch) => {
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Navbar);
+
+// <Button
+//   key='1'
+//   onClick={() =>
+//     setTheme((old) => (old === 'dark' ? 'light' : 'dark'))
+//   }
+//   style={
+//     theme === 'dark'
+//       ? { backgroundColor: 'white', color: 'black' }
+//       : { backgroundColor: '#424242', color: 'white' }
+//   }
+// >
+//   {theme === 'dark' ? 'light mode' : 'dark mode'}
+// </Button>,

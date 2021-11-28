@@ -14,9 +14,9 @@ const SearchInput = (props) => {
   const { Search } = Input;
   const inputRef = useRef();
 
-  const onSearch = (value) => {
-    setCityName(value);
-    if (!value) {
+  const onSearch = (e) => {
+    setCityName(e.target.value);
+    if (!e.target.value) {
       return setAutoComplete([]);
     }
   };
@@ -33,7 +33,7 @@ const SearchInput = (props) => {
           <Search
             placeholder='search city'
             allowClear
-            onSearch={onSearch}
+            onChange={onSearch}
             style={{ width: 300 }}
             ref={inputRef}
             size='large'
