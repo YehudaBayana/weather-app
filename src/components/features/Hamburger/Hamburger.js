@@ -21,7 +21,7 @@ function Hamburger(props) {
           &times;
         </span>
         <div className='overlay-content'>
-          <a
+          {/* <a
             href='https://tech-career-alternative.firebaseapp.com/'
             target='_blank'
             rel='noreferrer'
@@ -31,7 +31,7 @@ function Hamburger(props) {
               width='200px'
               alt=''
             />
-          </a>
+          </a> */}
           <Link to='/' onClick={() => closeNav()}>
             HOME
           </Link>
